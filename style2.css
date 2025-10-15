@@ -1,0 +1,102 @@
+body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+    }
+
+    .topbar {
+        background-color: #05A24B; /* xanh lá */
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 6px 20px;
+        font-size: 15px;
+    }
+
+    .date {
+        font-weight: 500;
+    }
+
+    .lang {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .lang img {
+        width: 20px;
+        vertical-align: middle;
+    }
+
+    .links a {
+        color: white;
+        text-decoration: none;
+        margin: 0 6px;
+    }
+
+    .links a:hover {
+        text-decoration: underline;
+    }
+
+    .search {
+        border: 2px solid white;
+        border-radius: 5px;
+        padding: 3px 6px;
+        cursor: pointer;
+        font-size: 18px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: start;
+      padding: 20px 50px;
+      background-color: white;
+    }
+
+    .header img {
+      height: 100px; /* chỉnh độ cao logo */
+      margin-right: 20px;
+    }
+
+    .header-text {
+        line-height: 1.4;
+    }
+
+    .header-text .small {
+        color: #0047BA; /* xanh dương */
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .header-text .large {
+        color: #d32b39; /* xanh dương */
+        font-size: 50px;
+        font-weight: bold;
+    }
+    .body_1 #line_1{
+        margin-left: 100px;
+        font-size: 20px;
+    }
+    .body_1 .Chon{
+        width: 600px;
+        height: 40px;
+        font-size: 16px;
+        border-radius: 10px;
+        text-align: 10px;
+        text-align-last: center;
+    }
+    .body_2 #line_2{
+        margin-left: 100px;
+        font-size: 20px;
+    }
+    .body_2 input{
+        width: 600px;
+        height: 40px;
+        font-size: 16px;
+        border-radius: 10px;
+        text-align-last: center;
+    }
+        

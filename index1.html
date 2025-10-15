@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en, vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <title>Tra cứu điểm thi</title>
+</head>
+<body>
+    <div class="topbar">
+    <div class="date" id="date"></div>
+
+    <div class="lang">
+        <img src="https://flagcdn.com/w20/vn.png" alt="VN"> Tiếng Việt
+        <img src="https://flagcdn.com/w20/gb.png" alt="EN"> English
+    </div>
+
+    <div class="links">
+        <a href="#">Trang chủ</a> |
+        <a href="#">Liên hệ</a> |
+        <a href="#">Email</a> |
+        <a href="#">Sơ đồ site</a>
+        <span class="search">🔍</span>
+    </div>
+    </div>
+
+    <script>
+    function capNhatNgay() {
+        const now = new Date();
+        const thu = ["Chủ Nhật", "Thứ Hai", "Thứ Ba", "Thứ Tư", "Thứ Năm", "Thứ Sáu", "Thứ Bảy"];
+        const ngay = now.getDate().toString().padStart(2, '0');
+        const thang = (now.getMonth() + 1).toString().padStart(2, '0');
+        const nam = now.getFullYear();
+        document.getElementById("date").innerText = `${thu[now.getDay()]}, ${ngay}/${thang}/${nam}`;
+    }
+    capNhatNgay();
+    </script>
+
+    
+    <div class="header">
+        <img src="./image/logo-DHPCCC.png" alt="" width="12%">
+    <!-- <img src="https://upload.wikimedia.org/wikipedia/commons/f/f3/Logo_Hoc_vien_Canh_sat_nhan_dan.png" alt="Logo Học viện Cảnh sát Nhân dân"> -->
+    <div class="header-text">
+        <div class="small">TRA CỨU ĐIỂM THI</div>
+        <div class="large">ĐẠI HỌC PHÒNG CHÁY CHỮA CHÁY</div>
+    </div>
+    </div>
+
+    <div class="body_1">
+        <p id="line_1"> Chọn kì thi:</p>
+    <select class="Chon">
+        <option value="">-- Chọn kỳ thi --</option>
+        <option value="hk1">Thi học kỳ 1</option>
+        <option value="hk2">Thi học kỳ 2</option>
+        <option value="giua_ky">Thi giữa kỳ</option>
+        <option value="olympic">Thi Olympic</option>
+    </select>
+    </div>
+    
+    <div class="body_2">
+        <p id="line_2">Nhập số CCCD</p>
+        <input type="text" placeholder="Nhập số CCCD">
+    </div>
+
+</body>
+</html>
